@@ -1,8 +1,8 @@
 # CASEY-Tool
 
-Thesis title: LLM-ASSISTED CWE IDENTIFICATION, SEVERITY ASSESSMENT, AND VULNERABILITY DESCRIPTION GENERATION
+Thesis title: LLM-Assisted CWE identification, severity assessment, and vulnerability description generation
 
-Degree: Master of Science
+Degree: Master of Science (Computer Science)
 
 University: University of Nebraska-Lincoln (UNL)
 
