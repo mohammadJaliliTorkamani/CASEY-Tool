@@ -1,0 +1,5 @@
+# CASEY-Tool
+LLM-ASSISTED CWE IDENTIFICATION, SEVERITY ASSESSMENT, AND VULNERABILITY DESCRIPTION GENERATION
+
+Mohammad Jalili Torkamani | School od Computing | University of Nebraska-Lincoln
+
