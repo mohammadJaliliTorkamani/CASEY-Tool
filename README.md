@@ -31,7 +31,7 @@ December 2025
 
 ## Requirements
 
-CASEY tool runs on any operating system with Python 3.12 or later. However, it has been tested on macOS and Ubuntu 24.04 LTS. Using PyCharm as the IDE is recommended.
+CASEY tool runs on any operating system with Python 3.12 or later. However, it has been tested on macOS and Ubuntu 24.04.3 LTS. Using PyCharm as the IDE is recommended.
 
 
 ## How to run?
