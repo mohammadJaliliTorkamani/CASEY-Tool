@@ -1,0 +1,41 @@
+import argparse
+import json
+
+import tree_sitter_ruby
+from tree_sitter import Language, Parser
+
+
+def main(file_path):
+    code = open(file_path).read()
+    parser = Parser()
+    parser.language = Language(tree_sitter_ruby.language())
+    tree = parser.parse(bytes(code, "utf8"))
+
+    methods = extract_methods(tree.root_node, code.encode("utf8"))
+
+    result = {"methods": methods}
+    obj = json.dumps(result, indent=4)
+    print(obj)
+
+
+def extract_methods(node, code):
+    methods = []
+    if node.type in ('method', 'singleton_method'):
+        start_line = node.start_point[0] + 1
+        end_line = node.end_point[0] + 1
+
+        methods.append((node.text.decode('utf-8'),start_line,end_line))
+
+
+    for child in node.children:
+        methods.extend(extract_methods(child, code))
+
+    return methods
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Extract methods from a Ruby file.')
+    parser.add_argument('file_path', type=str, help='Path to the RB file')
+    args = parser.parse_args()
+
+    main(args.file_path)
