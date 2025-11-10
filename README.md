@@ -69,4 +69,4 @@ Then, configure CASEY flags in `constants.py`:
 
 Finally, run the tool:
 
-    pip install -r requirements.txt
+    python main.py
