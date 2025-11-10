@@ -1,9 +1,8 @@
 import json
-import os
 
 # CONFIGURATION
 MODE = "MULTI"  # "SINGLE" or "MULTI"
-LEVEL = "FULL"   # "PURE" or "FULL"
+LEVEL = "FULL"  # "PURE" or "FULL"
 
 # Input JSON file
 input_path = "JSON PATH COMES HERE"  # change to your actual input file
@@ -20,7 +19,7 @@ def extract_func(obj, mode, level):
     mode = "SINGLE": only the first element
     mode = "MULTI": concatenate all elements
     """
-    obj = obj.get("vulnerability",[])
+    obj = obj.get("vulnerability", [])
     if level == "FULL":
         items = obj.get("file_level", [])
         if mode == "SINGLE":
@@ -70,7 +69,7 @@ def process_json(input_path, output_path, mode, level):
         })
 
     # Wrap in a top-level "vulnerable" field
-    wrapped_output = { "vulnerable": vulnerable_entries }
+    wrapped_output = {"vulnerable": vulnerable_entries}
 
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(wrapped_output, f, indent=4)
