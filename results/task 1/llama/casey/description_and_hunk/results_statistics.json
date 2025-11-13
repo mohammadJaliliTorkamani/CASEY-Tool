@@ -1,0 +1,45 @@
+{
+    "size": 328,
+    "date_time": "2025_09_10_14_05_01",
+    "number_of_null_is_vulnerable_prediction": 0,
+    "number_of_correct_is_vulnerable_prediction": 328,
+    "number_of_incorrect_is_vulnerable_prediction": 0,
+    "number_of_null_is_security_vulnerable_prediction": 0,
+    "number_of_correct_is_security_vulnerable_prediction": 328,
+    "number_of_incorrect_is_security_vulnerable_prediction": 0,
+    "number_of_null_cwe_prediction": 0,
+    "number_of_empty_cwe_prediction": 0,
+    "number_of_identical_cwe_prediction": 104,
+    "number_of_gt_subset_equal_pr_cwe_prediction": 104,
+    "number_of_pr_subset_equal_gt_cwe_prediction": 119,
+    "number_of_overlapped_cwe_prediction": 0,
+    "number_of_not_overlapped_cwe_prediction": 209,
+    "number_of_severity_null_prediction": 0,
+    "number_of_severity_correct_prediction": 173,
+    "number_of_severity_incorrect_prediction": 155,
+    "number_of_cvss_score_null_prediction": 0,
+    "number_of_cvss_score_proximity_prediction": {
+        "0": 28,
+        "0.5": 48,
+        "1": 57,
+        "1.5": 46
+    },
+    "number_of_identical_is_vulnerable_identical_is_security_vulnerable_identical_cwe_correct_severity_in_range_cvss_prediction": {
+        "0": 14,
+        "0.5": 10,
+        "1": 24,
+        "1.5": 23
+    },
+    "number_of_identical_is_vulnerable_identical_is_security_vulnerable_pr_subset_equal_gt_cwe_correct_severity_in_range_cvss_prediction": {
+        "0": 14,
+        "0.5": 14,
+        "1": 29,
+        "1.5": 24
+    },
+    "number_of_identical_is_vulnerable_identical_is_security_vulnerable_gt_subset_equal_pr_cwe_correct_severity_in_range_cvss_prediction": {
+        "0": 14,
+        "0.5": 10,
+        "1": 24,
+        "1.5": 23
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "is_vulnerable": 100,
+    "is_security_vulnerable": 99,
+    "cwe": 27,
+    "severity": 34,
+    "cvss_score": 4
+}
